@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  lang="fr">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" Répertoire des menus de restaurants gastronomiques." />   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="public/css/style1.css">
+    <title>Ohmyfood</title>
+</head>
+<body> 
+    
+    <header>
+        <div class = "logo">
+        	<!--<img src="public/img/ohmyfood.png">-->ohmyfood
+        </div>
+        <div class = "map">
+			<i class="fa fa-map-marker"></i><span>Paris, Belleville</span>
+        </div>
+        <div class="reserve">
+            <h1>Réservez le menu qui vous convient</h1>
+            <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
+            <div>
+                <a class="button" href="/#resto">Explorez nos restaurants</a>
+            </div>
+        </div>
+    </header>
+
+    <!--fonctionnement-->
+    <section id="fonction">
+        <h2>Fonctionnement</h2>
+        <div class="container">
+            <div class="item">
+                <button>1</button>
+                <i class="fa fa-mobile"></i>
+                <span>Choisissez un restaurant</span>
+            </div>
+            <div class="item">
+                <button>2</button>
+                <i class="fa fa-list-ul"></i>
+                <span>Composez votre menu</span>
+            </div>
+            <div class="item">
+                <button>3</button>
+                <i class="fa fa-archive"></i>
+                <span>Dégustez au restaurant</span>
+            </div>
+            <div class="item tablet"></div>
+        </div>
+    </section>
+         <a id="resto"></a>
+    <!--reataurants-->
+    <section id="restaurants">
+        <h2>Restaurants</h2>
+        <div class="container">
+            <div class="item">
+            	<a href="la-palette-du-gout.html">
+                    <img  src="public/img/la-palette-du-gout.jpg" alt="">
+                    <p>
+                        La palette du goût
+                        <span>Menilmontant</span>
+                    </p>
+                </a>
+                <input type="checkbox" id="like1" />
+                <label for="like1">
+                    <i class="fa fa-heart-o"></i>
+                    <i class="fa fa-heart"></i>
+                </label>
+            </div>
+            <div class="item">
+                <a href="la-note-enchantee.html">
+                    <img  src="public/img/la-note-enchantee.jpg" alt="">
+                    <p>
+                        La note enchantée
+                        <span>Charonne</span>
+                    </p>
+                </a>
+                <input type="checkbox" id="like2" />
+                <label for="like2">
+                    <i class="fa fa-heart-o"></i>
+                    <i class="fa fa-heart"></i>
+                </label>
+            </div>
+            <div class="item">
+                <a href="a-la-francaise.html">
+                    <img src="public/img/a-la-francaise.jpg" alt="">
+                    <p>
+                        À la française
+                        <span>Cite Rouge</span>
+                    </p>
+                </a>
+                <input type="checkbox" id="like3" />
+                <label for="like3">
+                    <i class="fa fa-heart-o"></i>
+                    <i class="fa fa-heart"></i>
+                </label>
+            </div>
+            <div class="item">
+            	<a href="le-delice-des-sens.html">
+                    <img src="public/img/le-delice-des=sens.jpg" alt="">
+                    <p>
+                        Le délice des sens
+                        <span>Folie-Méricourt</span>
+                    </p>
+                </a>
+                <input type="checkbox" id="like4" />
+                <label for="like4">
+                    <i class="fa fa-heart-o"></i>
+                    <i class="fa fa-heart"></i>
+                </label>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+       <div class = "logo">
+        	ohmyfood
+        </div>
+        <ul>
+            <li><i class="fa fa-cutlery"></i>Proposer un restaurant</li>
+            <li><i class="fa  fa-user-plus"></i>Devenir partenaire</li>
+            <li><i></i>Mentions légales</li>
+            <li><i></i><a href="mailto:info@ohmyfood.com">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

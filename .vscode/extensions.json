@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "ritwickdey.live-sass",
+        "onecentlin.laravel-blade",
+        "firefox-devtools.vscode-firefox-debug",
+        "felixfbecker.php-pack",
+        "angular.ng-template",
+        "dotjoshjohnson.xml",
+        "awwsky.csharpfixformatfixed",
+        "github.vscode-pull-request-github",
+        "ms-mssql.mssql",
+        "thekalinga.bootstrap4-vscode"
+    ]
+}
