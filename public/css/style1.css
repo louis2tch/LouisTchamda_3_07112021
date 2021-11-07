@@ -291,7 +291,9 @@ display:block;
 #like4
 {display:none;}
 
-.fa-heart{
+#restaurants .fa-heart,
+#commande .fa-heart
+{
   display:none;
 }
 
