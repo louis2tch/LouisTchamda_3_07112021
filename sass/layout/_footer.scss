@@ -1,0 +1,26 @@
+footer {
+	color: $colour-white;
+	background:#353535;
+	padding:25px 30px 40px;
+    & .logo {
+        color: $colour-white;
+        width:100%;
+        @include f-family-logo;  
+        font-size: 18px;
+        margin:0 0 15px;
+    }
+    & li {
+        color: $colour-white;
+        list-style:none;
+        padding-bottom:8px;
+    }
+    & .fa {
+        color: $colour-white;
+        margin-right:10px;
+        font-size:  15px;
+    }
+    & a {
+        color: $colour-white; 
+        text-decoration:none;
+    }
+}

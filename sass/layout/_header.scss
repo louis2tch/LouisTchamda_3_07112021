@@ -1,0 +1,60 @@
+header {
+    margin: 0;
+    padding: 0;
+   & .logo {
+       @include f-family-logo;
+       display: inline-block;
+       width:100%;
+       text-align:center;
+       font-size: 30px;
+       margin:10px 0;
+       padding: 0; 
+   } 
+   & .map{
+       width:100%;
+       background-color:$map-bg;
+       border-top: 2px solid $colour-border;
+       box-shadow: 2px 1px 5px rgba(0,0,0,0.12);
+       text-align:center;
+       font-weight:400;
+       padding: 10px 0 15px;
+       margin:0;
+       & span{
+           margin-left:20px; 
+           font-weight:600;
+           font-size:16px;
+       }
+       & .fa-map-market{
+           font-size:20px;
+       }
+   }
+   & .reserve{
+       background:  $bg;
+       padding: 40px 5px;
+       margin: 0;
+       text-align: center; 
+       & h1{
+            padding: 0 50px;
+            font-size:25px;
+            font-weight:900;
+       }
+       & p{
+           margin-top:10px;
+           padding: 0 30px;
+           font-size:17px;
+           font-weight: 300;   
+       }
+       & div{
+           margin:30px 0 0;
+           padding-bottom:20px;
+       }
+       & .back {
+           position:relative;
+           z-index:1;
+           top:-22px;
+           margin: 0 0 0 10px;
+           padding: 0;
+       }
+   }
+
+}

@@ -1,27 +1,113 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    color: $colour-primary;
-    font-size: 2rem;
-    font-weight: 100;
-    line-height: 1.7;
+.fa-heart-o {
+    @extend %typography-heart;
+}
+.fa-heart {
+    @extend %typography-heart;
 }
 
-h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 5rem;
-    font-style: italic;
+#commande-like {
+    @extend %typography-like;
+}
+#like1 {
+    @extend %typography-like;
+}
+#like2 {
+    @extend %typography-like;
+}
+#like3 {
+    @extend %typography-like;
+}
+#like4 {
+    @extend %typography-like;
 }
 
-textarea {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 2rem;
+
+#commande-like{
+    &:checked{
+        & + label{
+            & .fa{
+                @extend %typography-like-checked-fa;
+            }
+            & .fa-heart{
+                @extend %typography-like-checked-fa-heart;
+            }
+            & .fa-heart-o{
+                @extend %typography-like-checked-fa-heart-o;
+            }
+        }
+    }
 }
 
-button {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 2.75rem;
+@for $var from 1 to 5 {
+    #like#{$var}{
+        &:checked{
+            & + label{
+                & .fa{
+                    @extend %typography-like-checked-fa;
+                }
+                & .fa-heart{
+                    @extend %typography-like-checked-fa-heart;
+                }
+                & .fa-heart-o{
+                    @extend %typography-like-checked-fa-heart-o;
+                }
+            }
+        }
+    }
+}
+
+@for $var from 1 to 11 {
+    #menu-#{$var}{
+        @extend %typography-menu;
+    }
+}
+
+#commande-like{
+    &:hover{
+        & + label{
+            & .fa{
+                @extend %typography-like-hover-fa;
+            }
+            & .fa-heart{
+                @extend %typography-like-hover-fa-heart;
+            }
+            & .fa-heart-o{
+                @extend %typography-like-hover-fa-heart-o;
+            }
+        }
+    }
+}
+
+@for $var from 1 to 5 {
+    #like#{$var}{
+        &:hover{
+            & + label{
+                & .fa{
+                    @extend %typography-like-hover-fa;
+                }
+                & .fa-heart{
+                    @extend %typography-like-hover-fa-heart;
+                }
+                & .fa-heart-o{
+                    @extend %typography-like-hover-fa-heart-o;
+                }
+            }
+        }
+    }
+}
+
+@for $var from 1 to 11 {
+    #menu-#{$var}{
+        &:hover{
+            & + label{
+                & > .price-check{
+                    @extend %typography-menu-hover-price-check;
+                }
+                & > .item-title{
+                    @extend %typography-menu-hover-item-title;
+                }
+            }
+        }
+        
+    }
 }

@@ -1,0 +1,26 @@
+@mixin button-bg-image{
+    background-image: linear-gradient($colour-secondary, $colour-primary);
+}
+
+@mixin f-family{
+    font-family: "Roboto", sans-serif;
+}
+
+@mixin f-family-logo{
+    font-family: "Shrikhand", sans-serif;
+}
+
+@mixin container($flex-d:column, $flex-w:nowrap){
+    display: flex;
+    flex-wrap: $flex-w;
+	flex-direction: $flex-d;
+	justify-content: space-around;
+}
+
+@mixin f-style($top:5px, $f-size:30px, $opacity:0.50){
+    position: relative;
+    top:$top; 
+    font-size:$f-size;
+    margin:0 20px 0 5px;
+    opacity: $opacity;
+}

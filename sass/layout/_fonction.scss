@@ -1,0 +1,49 @@
+#fonction{
+    margin:50px 0 0;
+	padding:0 15px 0 30px; 
+    & h2 {
+        @extend %typography;
+    }
+    & .container{
+        @include container;
+        @extend  %typography-container;
+    }
+    & .item{
+        background: $bg;
+        border-radius:30px;
+        margin: 0 0 22px;
+        padding:23px 0;	
+        box-shadow: 2px 1px 0px rgba(0,0,0,0.04), 2px 5px 10px rgba(0,0,0,0.15); 
+        @extend %typography-item;
+    }
+    & .tablet{
+        display: none;
+        @extend %typography-tablet;
+    }
+    & button{
+        Position:relative;
+        left:-12px;  
+        z-index:1;
+        height:25px; 
+        width:25px; 
+        padding:0;
+        border:0; 
+        border-radius: 50%; 
+        background: $colour-primary;
+        color: $colour-white;
+        text-align:center;
+    }
+    & .fa-mobile {
+        @include f-style;
+    }
+    & .fa-list-ul {
+        @include f-style(0, 20px, 0.5);
+    }  
+    & .fa-archive {
+        @include f-style(2px, 20px, 1);
+        color: $colour-primary;
+    } 
+    & span {
+        font-weight:600;
+    }
+}

@@ -1,3 +1,42 @@
-.btn {
-    @include btn
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: $colour-white; 
+	/*height:42px;*/ 
+	padding:15px 25px; 
+	/*border:2px  solid #f2f2f2;*/
+	border-radius: 30px;  
+	/*background-color: #9356DC; */
+	@include button-bg-image;
+	font-weight:500; 
+	font-size:16px; 
+	box-shadow: 2px 1px 0px rgba(0,0,0,0.04), 2px 5px 10px rgba(0,0,0,0.15);
+	cursor:pointer;
+}
+a.button:hover {
+	color: $colour-white;
+	box-shadow:  2px 5px 3px rgba(0,0,0,0.12), 0 1px 10px rgba(0,0,0,0.24);
+	filter:brightness(110%);
+}
+.btn{
+	color: $colour-white; 
+	
+	border-style:none;
+	/*height:42px;*/ 
+	padding:15px 50px; 
+	/*border:2px  solid #f2f2f2;*/
+	border-radius: 30px;  
+	/*background-color: #9356DC; */
+	@include button-bg-image;
+    font-weight:500; 
+	font-size:16px; 
+	box-shadow: 2px 1px 0px rgba(0,0,0,0.04), 2px 5px 10px rgba(0,0,0,0.15);
+	cursor:pointer;	
+}
+.btn:hover {
+	color: $colour-white;
+	box-shadow:  2px 5px 3px rgba(0,0,0,0.12), 0 1px 10px rgba(0,0,0,0.24);
+	filter:brightness(110%);
 }

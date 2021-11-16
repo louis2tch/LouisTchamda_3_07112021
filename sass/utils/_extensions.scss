@@ -1,0 +1,116 @@
+%typography{
+    font-size:25px;
+	font-weight:900;
+	margin-bottom: 25px;
+}
+
+%typography-heart{
+	padding:10px 20px 0 0;
+	float:right;
+	font-size: 23px;
+	cursor: pointer;
+}
+
+%typography-like{
+	display: none;
+}
+
+%typography-like-checked-fa{
+	transform:scale(.8);
+	animation:animateHeart .3s linear forwards .25s;
+}
+
+%typography-like-checked-fa-heart{
+	display:block;
+	color: $colour-primary;
+}
+
+%typography-like-checked-fa-heart-o{
+	display: none;
+}
+
+%typography-menu{
+	display: none;
+}
+
+%typography-container{
+	@media only screen and (min-width: 769px){
+		@include container(row,wrap);
+		align-content: space-around;
+	}
+}
+
+%typography-item{
+	@media only screen and (min-width: 769px){
+		width: 45%;
+	}
+}
+
+%typography-tablet{
+	@media only screen and (min-width: 769px){
+		display:block;
+		background:none;
+		border:none;
+		box-shadow:none;
+	}
+}
+
+%typography-margin-item {
+    @media only screen and (min-width: 769px) {
+        margin: 0 0 50px;
+    }
+}
+
+%typography-commande-img {
+    @media only screen and (min-width: 769px) {
+        height:450px; 
+		overflow:hidden;
+    }
+}
+
+%typography-tourne {
+    @media only screen and (min-width: 769px) {
+        left:45%;
+    }
+}
+
+%typography-like-hover-fa{
+	@media only screen and (min-width: 1280px) {
+		transform:scale(.8);
+		animation:animateHeart .3s linear forwards .25s;
+    }
+}
+
+%typography-like-hover-fa-heart{
+	@media only screen and (min-width: 1280px) {
+        display:block;
+  		color: #9356DC;
+    }
+}
+
+%typography-like-hover-fa-heart-o{
+	@media only screen and (min-width: 1280px) {
+        display:none;
+    }
+}
+
+%typography-menu-hover-price-check{
+	@media only screen and (min-width: 1280px) {
+        display:inline-block;
+		transform-origin: right 100%;
+		transform:scalex(.3);
+		animation:animateHeart2 .1s linear both 0s;
+    }
+}
+
+%typography-menu-hover-item-title{
+	@media only screen and (min-width: 1280px) {
+        max-width:60%;
+    }
+}
+
+%typography-stagne-tourne{
+	@media only screen and (min-width: 1280px) {
+        left:45%;
+    }
+}
