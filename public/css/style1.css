@@ -299,13 +299,58 @@ display:block;
 	font-size: 23px;
 	cursor: pointer;
 }
-#commande-like,
-#like1,
-#like2,
-#like3,
-#like4
+
+#commande-likes,
+#likes1,
+#likes2,
+#likes3,
+#likes4
 {display:none;}
 
+#commande-likes + label > .fa-heart-o
+{
+	position:relative;
+	left:43px;	
+}
+
+#likes1 + label > .fa-heart-o,
+#likes2 + label > .fa-heart-o,
+#likes3 + label > .fa-heart-o,
+#likes4 + label > .fa-heart-o
+{
+	position:relative;
+	left:83px;	
+}
+
+#commande-likes + label > .fa-heart,
+#likes1 + label > .fa-heart,
+#likes2 + label > .fa-heart,
+#likes3 + label > .fa-heart,
+#likes4 + label > .fa-heart
+{
+    color: #fff;
+	font-weight: 600;
+    transition: color 1s ease-out;
+}
+
+#commande-likes:checked + label > .fa-heart,
+#likes1:checked + label > .fa-heart,
+#likes2:checked + label > .fa-heart,
+#likes3:checked + label > .fa-heart,
+#likes4:checked + label > .fa-heart,
+#commande-likes:checked + label > .fa-heart-o,
+#likes1:checked + label > .fa-heart-o,
+#likes2:checked + label > .fa-heart-o,
+#likes3:checked + label > .fa-heart-o,
+#likes4:checked + label > .fa-heart-o
+{
+    color: #9356DC;  
+}
+
+
+
+
+/*
 #restaurants .fa-heart,
 #commande .fa-heart
 {
@@ -341,11 +386,13 @@ display:block;
   display:none; 
   
 }
+*/
+/*
 @keyframes animateHeart{
   40%{transform:scale(.8);}
   100%{transform:scale(1);}
 }
-
+*/
 #menu-1, #menu-2, #menu-3, #menu-4, #menu-5, 
 #menu-6, #menu-7, #menu-8, #menu-9, #menu-10
 {display:none;}
@@ -604,32 +651,18 @@ header, #fonction, #restaurants, footer {
 
 @media only screen and (min-width: 1280px) {
 
-#commande-like:hover + label .fa,
-#like1:hover + label .fa,
-#like2:hover + label .fa,
-#like3:hover + label .fa,
-#like4:hover + label .fa
+#commande-likes:hover + label > .fa-heart,
+#likes1:hover + label > .fa-heart,
+#likes2:hover + label > .fa-heart,
+#likes3:hover + label > .fa-heart,
+#likes4:hover + label > .fa-heart,
+#commande-likes:hover + label > .fa-heart-o,
+#likes1:hover + label > .fa-heart-o,
+#likes2:hover + label > .fa-heart-o,
+#likes3:hover + label > .fa-heart-o,
+#likes4:hover + label > .fa-heart-o
 {
-  transform:scale(.8);
-  animation:animateHeart .3s linear forwards .25s;
-}
-#commande-like:hover + label .fa-heart,
-#like1:hover + label .fa-heart,
-#like2:hover + label .fa-heart,
-#like3:hover + label .fa-heart,
-#like4:hover + label .fa-heart
-{
-  display:block;
-  color: #9356DC;
-}
-#commande-like:hover + label .fa-heart-o,
-#like1:hover + label .fa-heart-o,
-#like2:hover + label .fa-heart-o,
-#like3:hover + label .fa-heart-o,
-#like4:hover + label .fa-heart-o
-{
-  display:none; 
-  
+    color: #9356DC;  
 }
 
 
